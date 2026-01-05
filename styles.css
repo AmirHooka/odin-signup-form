@@ -1,0 +1,131 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*:not(dialog) {
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+body {
+    display: flex;
+}
+
+#left-box {
+    background-image: url('./img/drake.jpeg');
+    height: 100vh;
+    width: 35vw;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#right-box {
+    height: 100%;
+    width: 65vw;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+#logo {
+    margin-top: 20vh;
+    width: 180px;
+}
+
+.paragraph {
+    height: 33vh;
+    width: 100%;
+    background-color: #77889915;
+}
+
+.paragraph.mid {
+    height: 34vh;
+    background-color: white;
+}
+
+#credit {
+    justify-self: flex-end;
+    color: lightgray;
+    background-color: #00000025;
+}
+
+.paragraph.top {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px;
+    font-family: "Bodoni 72";
+    letter-spacing: 0.01rem;
+    font-size: 1.2rem;
+
+}
